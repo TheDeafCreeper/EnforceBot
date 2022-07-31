@@ -73,17 +73,17 @@ async function getBadLinks(): Promise<string[]> {
     sources[7] = hostFileToDomains(sources[7]); //Hosts File
 
     sources[1] = sources[1].split("\n");
-    sources[1] = sources[1].map((url) => { return sha256(url); });
+    sources[1] = sources[1].map((url: string) => { return sha256(url); });
 
     sources[2] = sources[2].split("\n");
-    sources[2] = sources[2].map((url) => { return sha256(url); });
+    sources[2] = sources[2].map((url: string) => { return sha256(url); });
 
-    sources[3] = sources[3].map((url) => { return sha256(url); });
+    sources[3] = sources[3].map((url: string) => { return sha256(url); });
     //sources[5] = sources[5].map((url) => { return sha256(url); });
-    sources[6] = sources[6].map((url) => { return sha256(url); });
-    sources[7] = sources[7].map((url) => { return sha256(url); });
+    sources[6] = sources[6].map((url: string) => { return sha256(url); });
+    sources[7] = sources[7].map((url: string) => { return sha256(url); });
 
-    sources[8] = sources[8].map((url) => { return sha256(url); });
+    sources[8] = sources[8].map((url: string) => { return sha256(url); });
 
     //Merge all sources, making sure no duplicates
     let connedArray = sources.reduce((acc, cur) => {
