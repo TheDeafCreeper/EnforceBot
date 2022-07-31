@@ -1,0 +1,21 @@
+{
+    "_id": null,
+    "guildID": null,
+    "channelID": null,
+    "owner": null,
+    "name": "",
+    "dynamicSlowmode": {
+        "enabled": false,
+        "synced": true,
+        "sendMessages": false,
+        "lastUpdate": 0,
+        "targetMessageCount": 5,
+        "targetMessageTime": 15000,
+        "currentMessageRate": [],
+        "overridden": false
+    },
+    "moderation": {
+        "locked": false,
+        "oldOverwrites": []
+    }
+}

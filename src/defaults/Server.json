@@ -1,0 +1,1128 @@
+{
+    "_id": null,
+    "name": "",
+    "acronym": "",
+    "iconURL": null,
+    "bannerURL": null,
+    "owner": null,
+    "antiSpam": {
+        "enabled": true,
+        "detections": {
+            "total": {
+                "threshold": 5,
+                "decay": 0.15,
+                "actionGroup": "antiSpam-Total",
+                "enabled": true
+            },
+            "message": {
+                "pressure": 0.2,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Message",
+                "enabled": true
+            },
+            "length": {
+                "pressure": 0.0003,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Length",
+                "enabled": true
+            },
+            "repeat": {
+                "pressure": 0.2,
+                "threshold": 1,
+                "decay": 0.05,
+                "maxMultiplier": 5,
+                "actionGroup": "antiSpam-Repeat",
+                "enabled": true
+            },
+            "invite": {
+                "pressure": 1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Invite",
+                "enabled": true
+            },
+            "nsfw": {
+                "pressure": 1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-NSFW",
+                "enabled": true
+            },
+            "emoji": {
+                "pressure": 0.1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Emoji",
+                "enabled": true
+            },
+            "sticker": {
+                "pressure": 0.5,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Sticker",
+                "enabled": true
+            },
+            "newline": {
+                "pressure": 0.05,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-NewLine",
+                "enabled": true
+            },
+            "inactive": {
+                "pressure": 0.05,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Inactive",
+                "enabled": true
+            },
+            "mentionUser": {
+                "pressure": 0.25,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-MentionUser",
+                "enabled": true
+            },
+            "mentionRole": {
+                "pressure": 0.45,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-MentionRole",
+                "enabled": true
+            },
+            "mentionEveryone": {
+                "pressure": 1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-MentionEveryone",
+                "enabled": true
+            },
+            "embed": {
+                "pressure": 0.45,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Embed",
+                "enabled": true
+            },
+            "file": {
+                "pressure": 0.25,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-File",
+                "enabled": true
+            },
+            "image": {
+                "pressure": 0.25,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Image",
+                "enabled": true
+            },
+            "link": {
+                "pressure": 0.1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Link",
+                "enabled": true
+            },
+            "short": {
+                "pressure": 0.3,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Short",
+                "enabled": true
+            },
+            "spoiler": {
+                "pressure": 0.5,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Spoiler",
+                "enabled": true
+            },
+            "walloftext": {
+                "pressure": 1,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-WallofText",
+                "enabled": true
+            },
+            "caps": {
+                "pressure": 0.5,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Caps",
+                "enabled": true
+            },
+            "zalgo": {
+                "pressure": 0.5,
+                "threshold": 1,
+                "decay": 0.05,
+                "actionGroup": "antiSpam-Zalgo",
+                "enabled": true
+            }
+        }
+    },
+    "warningThresholds": {
+        "3": {
+            "actions": {
+                "sendMessage": "{@Member} has been muted for having 3 active warnings. The mute will {ExpiredString}.",
+                "sendDM": null,
+                "deleteMessages": null,
+                "warn": null,
+                "mute": 1800000,
+                "quarantine": null,
+                "kick": null,
+                "softBan": null,
+                "ban": null
+            },
+            "reason": "Warning Threshold (3) Reached",
+            "canSkip": false
+        },
+        "4": {
+            "actions": {
+                "sendMessage": "{@Member} has been muted for having 4 active warnings. The mute will {ExpiredString}.",
+                "sendDM": null,
+                "deleteMessages": null,
+                "warn": null,
+                "mute": 3600000,
+                "quarantine": null,
+                "kick": null,
+                "softBan": null,
+                "ban": null
+            },
+            "reason": "Warning Threshold (4) Reached",
+            "canSkip": false
+        },
+        "5": {
+            "actions": {
+                "sendMessage": "{@Member} has been quarantined for having 5 active warnings. The quarantine will {ExpiredString}.",
+                "sendDM": null,
+                "deleteMessages": null,
+                "warn": null,
+                "mute": null,
+                "quarantine": -1,
+                "kick": null,
+                "softBan": null,
+                "ban": null
+            },
+            "reason": "Warning Threshold (5) Reached",
+            "canSkip": false
+        }
+    },
+    "antiGrief": {},
+    "antiRaid": {},
+    "joinGate": {
+        "defaultAvatar": {
+            "enabled": false,
+            "actionGroup": "joinGate-DefaultAvatar"
+        },
+        "advertisementName": {
+            "enabled": false,
+            "actionGroup": "joinGate-AdvertisementName"
+        },
+        "newAccount": {
+            "enabled": true,
+            "actionGroup": "joinGate-NewAccount"
+        },
+        "inappropriateName": {
+            "enabled": true,
+            "actionGroup": "joinGate-InappropriateName"
+        },
+        "joinSpam": {
+            "enabled": true,
+            "threshold": 3,
+            "actionGroup": "joinGate-JoinSpam"
+        },
+        "unverifiedBot": {
+            "enabled": true,
+            "actionGroup": "joinGate-UnverifiedBot"
+        },
+        "verifiedBot": {
+            "enabled": true,
+            "actionGroup": "joinGate-VerifiedBot"
+        },
+        "mutedUser": {
+            "enabled": true,
+            "actionGroup": "joinGate-MutedUser"
+        },
+        "quarantinedUser": {
+            "enabled": true,
+            "actionGroup": "joinGate-QuarantinedUser"
+        }
+    },
+    "moderation": {
+        "staffRoles": [],
+        "reports": {
+            "channel": null,
+            "enabled": true,
+            "pingedRoles": [],
+            "allowAnonymous": false,
+            "blacklistedUsers": []
+        },
+        "quarantineRole": null
+    },
+    "actionGroups": {
+        "antiSpam-Total": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} dont spam!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Spam - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for spam. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for spam. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Spam - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Message": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of mesages you're sending!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Message Spam - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for message spam. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for message spam. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Message Spam - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Length": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the length of your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Message Length - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive message length. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive message length. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Message Length - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Repeat": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} avoid repeating messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Repeat Message - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for repeat messages. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for repeat messages. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Repeat Message - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Invite": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} dont send invites to other servers!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Invite - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for sending server invites. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for sending server invites. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Invite - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-NSFW": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been quarantined for NSFW content. The quarantine will {ExpiredString}.",
+                    "sendDM": "You have been quarantined in {Server} for NSFW content. The quarantine will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": -1,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "NSFW - Stage 1",
+                "canSkip": true
+            }
+        ],
+        "antiSpam-Emoji": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of emojis you're using!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Emojis - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive emojis. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive emojis. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Emojis - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Sticker": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of stickers you're using!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Stickers - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive sticker usage. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive sticker usage. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Stickers - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-NewLine": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of new lines in your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive New Lines - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive new lines. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive new lines. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive New Lines - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Inactive": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} avoid talking to yourself!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Inactive - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for XP farming. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for XP farming. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Inactive - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-MentionUser": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce how many users you're pinging!",
+                    "sendDM": null,
+                    "deleteMessages": null,
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Users Pinged - Stage 1",
+                "canSkip": true
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive pings. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive pings. The mute will {ExpiredString}.",
+                    "deleteMessages": null,
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Users Pinged - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-MentionRole": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce how many roles you're pinging!",
+                    "sendDM": null,
+                    "deleteMessages": null,
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Roles Pinged - Stage 1",
+                "canSkip": true
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive pings. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive pings. The mute will {ExpiredString}.",
+                    "deleteMessages": null,
+                    "warn": null,
+                    "mute": -1,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Roles Pinged - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-MentionEveryone": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for pinging everyone. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for pinging everyone. The mute will {ExpiredString}.",
+                    "deleteMessages": null,
+                    "warn": null,
+                    "mute": -1,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Pinged Everyone - Stage 1",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Embed": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of embeds in your message!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Embeds - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive embeds. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive embeds. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Embeds - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Image": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of images in your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Images - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive images. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive images. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Images - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-File": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of attachements in your message!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Files - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive attachements. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive attachements. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Files - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Link": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of links in your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Links - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive links. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive links. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Excessive Links - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Short": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} avoid sending short messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Short Messages - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive short messages. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive short messages. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Short Messages - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Spoiler": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the number of spoilers in your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Spoilers - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive spoilers. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive mspoilers. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Spoilers - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-WallofText": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} avoid sending large blocks of random text!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Wall of Text - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for sending walls of text, the mute will {ExpiredString}.",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Wall of Text - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Caps": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} stop shouting!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Caps - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for excessive caps. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for excessive caps. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Caps - Stage 2",
+                "canSkip": false
+            }
+        ],
+        "antiSpam-Zalgo": [
+            {
+                "actions": {
+                    "sendMessage": "{@Member} reduce the amount of Zalgo in your messages!",
+                    "sendDM": null,
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": null,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Zalgo - Stage 1",
+                "canSkip": false
+            },
+            {
+                "actions": {
+                    "sendMessage": "{@Member} has been muted for zalgo text. The mute will {ExpiredString}.",
+                    "sendDM": "You have been muted in {Server} for zalgo text. The mute will {ExpiredString}.",
+                    "deleteMessages": {
+                        "timeframe": 30000,
+                        "count": null
+                    },
+                    "warn": null,
+                    "mute": 1800000,
+                    "quarantine": null,
+                    "kick": null,
+                    "softBan": null,
+                    "ban": null
+                },
+                "reason": "Zalgo - Stage 2",
+                "canSkip": false
+            }
+        ]
+    },
+    "channels": [],
+    "members": {},
+    "scheduledEvents": [],
+    "roles": [],
+    "logging": {
+        "enabled": true,
+        "ignoredChannels": [],
+        "ignoredMembers": [],
+        "channels": {
+            "default": null,
+            "server": null,
+            "message": null,
+            "invite": null,
+            "joinLeave": null,
+            "channel": null,
+            "role": null,
+            "member": null,
+            "moderation": null,
+            "threads": null,
+            "events": null
+        },
+        "eventCategories": {
+            "messageUpdate": "message",
+            "messageDelete": "message",
+            "messageDeleteBulk": "message",
+            "messageReactionRemoveAll": "message",
+
+            "channelCreate": "channel",
+            "channelUpdate": "channel",
+            "channelPinsUpdate": "channel",
+            "channelDelete": "channel",
+
+            "emojiCreate": "server",
+            "emojiUpdate": "server",
+            "emojiDelete": "server",
+
+            "guildBanAdd": "moderation",
+            "guildBanRemove": "moderation",
+            "punishmentExecuted": "moderation",
+
+            "guildMemberAdd": "joinLeave",
+            "guildMemberRemove": "joinLeave",
+
+            "guildMemberUpdate": "member",
+
+            "guildScheduledEventCreate": "events",
+            "guildScheduledEventUpdate": "events",
+            "guildScheduledEventDelete": "events",
+
+            "guildUpdate": "server",
+
+            "inviteCreate": "invite",
+            "inviteDelete": "invite",
+
+            "roleCreate": "role",
+            "roleUpdate": "role",
+            "roleDelete": "role",
+
+            "stageInstanceCreate": "events",
+            "stageInstanceUpdate": "events",
+            "stageInstanceDelete": "events",
+
+            "stickerCreate": "server",
+            "stickerUpdate": "server",
+            "stickerDelete": "server",
+
+            "threadCreate": "threads",
+            "threadUpdate": "threads",
+            "threadDelete": "threads"
+        }
+    },
+    "joinGroups": {
+        "count": 0,
+        "groups": []
+    }
+}

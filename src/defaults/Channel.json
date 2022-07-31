@@ -1,0 +1,180 @@
+{
+    "_id": null,
+    "guildID": null,
+    "name": "",
+    "topic": "",
+    "nsfw": false,
+    "antiSpam": {
+        "enabled": true,
+        "detections": {
+            "total": {
+                "enabled": true,
+                "threshold": 5,
+                "synced": true,
+                "actionGroup": "antiSpam-Total"
+            },
+            "message": {
+                "enabled": true,
+                "pressure": 0.2,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Message"
+            },
+            "length": {
+                "enabled": true,
+                "pressure": 0.0003,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Length"
+            },
+            "repeat": {
+                "enabled": true,
+                "pressure": 0.2,
+                "threshold": 1,
+                "synced": true,
+                "maxMultiplier": 5,
+                "actionGroup": "antiSpam-Repeat"
+            },
+            "invite": {
+                "enabled": true,
+                "pressure": 1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Invite"
+            },
+            "nsfw": {
+                "enabled": false,
+                "pressure": 1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-NSFW"
+            },
+            "emoji": {
+                "enabled": true,
+                "pressure": 0.1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Emoji"
+            },
+            "sticker": {
+                "enabled": true,
+                "pressure": 0.5,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Sticker"
+            },
+            "newline": {
+                "enabled": true,
+                "pressure": 0.05,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-NewLine"
+            },
+            "inactive": {
+                "enabled": false,
+                "pressure": 0.05,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Inactive"
+            },
+            "mentionUser": {
+                "enabled": true,
+                "pressure": 0.25,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-MentionUser"
+            },
+            "mentionRole": {
+                "enabled": true,
+                "pressure": 0.45,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-MentionRole"
+            },
+            "mentionEveryone": {
+                "enabled": true,
+                "pressure": 1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-MentionEveryone"
+            },
+            "embed": {
+                "enabled": true,
+                "pressure": 0.45,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Embed"
+            },
+            "file": {
+                "enabled": true,
+                "pressure": 0.25,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-File"
+            },
+            "image": {
+                "enabled": true,
+                "pressure": 0.25,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Image"
+            },
+            "link": {
+                "enabled": true,
+                "pressure": 0.1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Link"
+            },
+            "short": {
+                "enabled": true,
+                "pressure": 0.3,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Short"
+            },
+            "spoiler": {
+                "enabled": true,
+                "pressure": 0.5,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Spoiler"
+            },
+            "walloftext": {
+                "enabled": false,
+                "pressure": 1,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-WallofText"
+            },
+            "caps": {
+                "enabled": true,
+                "pressure": 0.5,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Caps"
+            },
+            "zalgo": {
+                "enabled": true,
+                "pressure": 0.5,
+                "threshold": 1,
+                "synced": true,
+                "actionGroup": "antiSpam-Zalgo"
+            }
+        }
+    },
+    "dynamicSlowmode": {
+        "enabled": false,
+        "sendMessages": false,
+        "lastUpdate": 0,
+        "targetMessageCount": 5,
+        "targetMessageTime": 15000,
+        "currentMessageRate": [],
+        "overridden": false
+    },
+    "threads": [],
+    "moderation": {
+        "locked": false,
+        "oldOverwrites": []
+    }
+}

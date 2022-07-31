@@ -1,0 +1,13 @@
+{
+    "_id": null,
+    "username": null,
+    "discriminator": null,
+    "avatarURL": null,
+
+    "trustRating": 0,
+    "servers": [],
+    "isCompromised": false,
+    "isRaider": false,
+    "serviceBlacklisted": false,
+    "trustOffset": 0
+}

@@ -1,0 +1,25 @@
+{
+    "_id": null,
+    "memberID": null,
+    "serverID": null,
+
+    "displayName": null,
+    "nickname": null,
+    "firstJoin": null,
+    "messageCount": 0,
+
+    "antiSpam": {"pressures": {}},
+    "actionStages": {},
+    "activeThreads": [],
+    "inactiveThreads": [],
+    "moderation": {
+        "wasKickedOrBanned": false,
+        "history": [],
+        "removedRoles": [],
+        "notes": [],
+        "recentJoins": []
+    },
+    "roles": [],
+    "recentMessages": [],
+    "joinGroup": null
+}
