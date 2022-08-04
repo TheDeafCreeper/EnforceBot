@@ -1,10 +1,11 @@
 # Enforce
-<br />
+
 A Discord moderation bot made for servers, not profit.
-<br />
+
 The goal of Enforce is to give you all the features of other premium bots and more, all without requiring you to pay a dime.
 
-<br />
+Note: 
+In theory if you setup a database and compile the code as is it should work, it just currently does not meet Strict TS requirements.
 
 # Features
 
