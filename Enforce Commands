@@ -1,0 +1,134 @@
+Arguments surrounded by <> are required and without them the command wont work.
+Arguments surrounded by {} are optional and are not required for the command.
+Arguments inside of a [] (for example <1:[User] [Channel]> are exclusive, you pick one or the other.
+
+Arguments are labeled with a number so that they can be linked to a description under the command. 
+
+>-----User Moderation-----<
+purge <1:[Count] [Time]> {2:User(s) Filtered}
+  1: The number to delete or time period to delete.
+  2: The user(s) that should have their messages deleted, if not given all users will have messages deleted.
+
+warn <1:User> {2:Reason}
+  1: The user that is being warned, can be a ping or id.
+  2: The reason for the warning
+
+mute <1:User> {2:Duration} {3:Reason}
+  1: The user being muted, can be a ping or id.
+  2: How long the user will be muted for, uses a format like 5d or 1d12h
+  3: The reason for the mute
+
+unmute <1:User> {2:Reason}
+  1: The user being unmuted, can be a ping, or id.
+  2: The reason the user is being unmuted.
+
+quarantine <1:User> {2:Duration} {3:Reason}
+  1: The user being quarantined, can be a ping or id.
+  2: How long the user will be quarantined for, uses a format like 5d or 1d12h.
+  3: The reason for the quarantined.
+
+unquarantine <1:User> {2:Reason}
+  1: The user being removed from quarantine, can be a ping or id.
+  2: The reason they were removed from quarantine.
+
+kick <1:User> {2:Reason}
+  1: The user being kicked, can be a ping or id.
+  2: The reason for the kick.
+
+ban <1:User> {2:Duration} {3:Reason}
+  1: The user being banned, can be a ping or id.
+  2: How long the user will be banned for, uses a format like 5d or 1d12h.
+  3: The reason for the ban.
+
+softban <1:User> {2:Reason}
+  1: The user being soft banned, can be a ping or id.
+  2: The reason for the soft ban.
+ (edited)
+
+>-----Channel Management-----<
+lock <1:Channel> {2:Duration} {3:Reason}
+  1: The channel to lock
+  2: How long to lock the channel for, uses a format like 5d or 1d12h
+  3: Why the channel is being locked.
+
+unlock <1:Channel> {2:Reason}
+  1: The channel to unlock
+  2: Why the channel is being unlocked.
+
+TheDeafCreeper — 05/15/2021
+>-----Settings-----<
+setup {1: The thing(s) to setup}
+  1: All the things that can be automatically setup are:
+    Muted Role
+    Verified Role
+    Quarantine Role
+    Action confirmation channel
+    
+  If no list is provided, everything will be setup.
+
+setpressure {1:Channel} <2:Pressure> <3:Value> {4:"Max"}
+  1: The channel to edit, if no channel is provided it will update the server.
+  2: Which pressure you want to change, the current options are:
+    Message
+    Length
+    Repeat
+    Advertisment
+    NSFWLink
+    MaliciousLink
+    Emojis
+    NewLines
+    Inactive
+    UserMention
+    RoleMention
+    EveryoneMention
+    Embed
+    Image
+    File
+    Link
+
+    Short
+    Spoilers
+    WallOfText //Multiplier
+    Caps //Multiplier
+    Zalgo //Threshold
+  3: The value to set the pressure to.
+  4: If "Max" is added to the end of the command, it changes the max pressure instead of pressure value, this is useful if you just want to allow twice as much of something.
+
+setdecay <1:PressureType> <2:Value>
+  1: Which pressure decay you want to change, the current options are:
+    Message
+    Length
+    Repeat
+    Advertisment
+    NSFWLink
+    MaliciousLink
+    Emojis
+    NewLines
+    Inactive
+    UserMention
+    RoleMention
+    EveryoneMention
+    Embed
+    Image
+    File
+    Link
+    Short
+    Spoilers
+    WallOfText
+    Caps
+    Zalgo
+  2: The new value, all values default to 0.05.
+
+maxrepeatchain <1:Value>
+  1: The highest multiplier you can have for repeating messages, defaults to 5.
+
+setrole <1:UtilityRole> <2:Role>
+  1: The utility role you want to update (Verified,Muted,Quarantine)
+  2: The name, ping, or id of the role you want to use.
+
+setchannel <1:UtilityChannel> <2:Channel>
+  1: The utility channel you want to update (Report, Logging, Staff, PunishmentCheck)
+  2: The channel you want to use, can be a name, mention, or id.
+
+syncchannel <1:Channel>
+  1: The channel you want to have use the default server settings.
